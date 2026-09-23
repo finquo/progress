@@ -1,60 +1,111 @@
-# 30-Day Build Plan — Finquo
+# 30-Day Build Plan — Finquo Web App
+One-to-One Teaching Platform
+
+# PRD - Product Requirements Document
+
+## What is this?
+This is an app that connects students with teachers for one-to-one classes.
+
+## Why are we building it?
+Right now, matching a student with the right teacher and managing their classes is manual and messy. This app makes it simple and organized.
+
+## Who uses it?
+- **Admin** — Adds teachers and assigns them to schedulers. Manages the whole platform.
+- **Scheduler** — Matches teachers with students. Books class timings. Sends materials and gifts to students.
+- **Teacher** — Sets their availability. Teaches classes. Shares lessons.
+- **Student** — Gets added to the platform after buying a course. Attends classes, does lessons, and takes quizzes.
+
+## How does a student join?
+A student buys a course first. After that, they are added to the platform — they don't sign up on their own.
+
+## What can the app do?
+- Let the right people log in safely, based on their role.
+- Let an Admin add teachers and assign them to a Scheduler.
+- Let a Scheduler book class slots between a teacher and a student.
+- Let a Scheduler send study materials and gifts to students.
+- Show teachers their calendar and let them set free time slots.
+- Run live classes through Zoom.
+- Let students view lessons inside the app.
+- Let students take quizzes inside the app.
+- Track how each student and teacher is performing.
+- Send booking and reminder alerts over WhatsApp.
+- Use AI to help with some parts of the experience (details to be finalized).
+
+## What does success look like?
+- Students get matched and booked into classes without manual back-and-forth.
+- Teachers know their schedule and can teach without confusion.
+- The Admin can manage teachers and schedulers easily from one place.
+- Students can learn, take quizzes, and see their progress in one app.
+
+## What's not included right now?
+- Students browsing and picking their own teacher (Scheduler does this instead).
+- In-app live chat between students and teachers.
+- Payments inside the app (handled separately, before enrollment).
+
+# 30-Day Build Plan — One-to-One Teaching Platform
+
+**What changed in this version:**
+- Added a new screen for the Scheduler to send materials and gifts to students. This pushed the plan out by one day, so it now runs **31 days** (Sep 22 – Oct 22) instead of 30 — let me know if you'd rather cut a day elsewhere to keep it at 30.
+- Lessons and Quiz backend work are split into their own separate days.
+- Zoom (video calling) and AI-powered features are built in the **last week**, alongside final testing — assumed to mean AI is used for something like smart suggestions/automated help; let me know exactly what you want the AI to do and I'll make that day more specific.
+- The UI week has **one full day dedicated to each user role's screens** (Admin, Scheduler, Teacher, Student).
 
 ### Status Legend
 
 | Symbol | Meaning |
 |--------|---------|
-| ✅ | Done - finished and working |
-| 🚧 | In Progress - being worked on right now |
-| ▢ | Not Started - hasn't been picked up yet |
-| ❌ | Blocked / Issue - stuck or something's wrong, needs attention |
+| ✅ | Done — finished and working |
+| 🚧 | In Progress — being worked on right now |
+| ▢ | Not Started — hasn't been picked up yet |
+| ❌ | Blocked / Issue — stuck or something's wrong, needs attention |
 
-## Week 1 (Day 1–7): Database & API Writing
+## Week 1 (Sep 22 – Sep 29): Database & API Writing
 
-| Day | Feature | What it means | Status |
-|-----|---------|----------------|--------|
-| 1 | Login & Signup | Admins, teachers, schedulers, and students can log in safely (with different access levels) | ✅ |
-| 2 | Secure Data Storage | Setting up the system that safely stores all user info | 🚧 |
-| 3 | Connecting the Pieces + Roles & Permissions | Linking storage to the app; setting up who can do what (Admin/Scheduler/Teacher/Student) | ▢ |
-| 4 | Student Enrollment + Teacher Profile | Behind-the-scenes work to add a student after purchase, and to set up teacher profiles | ▢ |
-| 5 | Teacher–Scheduler Assignment + Teacher Availability | Behind-the-scenes work for admins to assign teachers to schedulers, and for teachers to set their free time slots | ▢ |
-| 6 | Booking Calendar | Behind-the-scenes work for schedulers to book time slots between teachers and students | ▢ |
-| 7 | Lessons + Quiz + Performance Tracking | Behind-the-scenes work for lesson content, quizzes, and tracking how students/teachers are doing | ▢ |
+| Date | Feature | What it means | Status |
+|------------|---------|----------------|--------|
+| Sep 22 (Tue) | Login & Signup logic | Admins, teachers, schedulers, and students can log in safely (with different access levels) | ✅ |
+| Sep 23 (Wed) | Secure Data Storage | Setting up the system that safely stores all user info | 🚧 |
+| Sep 24 (Thu) | Connecting the Pieces + Roles & Permissions | Linking storage to the app; setting up who can do what (Admin/Scheduler/Teacher/Student) | ▢ |
+| Sep 25 (Fri) | Student Enrollment + Teacher Profile | Behind-the-scenes work to add a student after purchase, and to set up teacher profiles | ▢ |
+| Sep 26 (Sat) | Teacher–Scheduler Assignment + Teacher Availability | Behind-the-scenes work for admins to assign teachers to schedulers, and for teachers to set their free time slots | ▢ |
+| Sep 27 (Sun) | Booking Calendar | Behind-the-scenes work for schedulers to book time slots between teachers and students | ▢ |
+| Sep 28 (Mon) | Lessons + Performance Tracking | Behind-the-scenes work for lesson content and tracking how students/teachers are doing | ▢ |
+| Sep 29 (Tue) | Quiz System | Behind-the-scenes work for creating and grading quizzes | ▢ |
 
-## Week 2 (Day 8–16): UI Screens — One Day Per Role
+## Week 2 (Sep 30 – Oct 09): UI Screens — One Day Per Role
 
-| Day | Feature | What it means | Status |
-|-----|---------|----------------|--------|
-| 8 | Admin Screens | Everything an Admin sees: managing teachers, schedulers, enrollments | ▢ |
-| 9 | Scheduler Screens | Everything a Scheduler sees: assigning teachers, managing the calendar | ▢ |
-| 10 | Teacher Screens | Everything a Teacher sees: profile, availability, upcoming classes | ▢ |
-| 11 | Student Screens | Everything a Student sees: profile, enrolled course, upcoming classes | ▢ |
-| 12 | Booking Calendar Screen | The screen to view and book available time slots | ▢ |
-| 13 | Lessons Screen | The screen where students view lesson content | ▢ |
-| 14 | Quiz Screen | The screen where students take quizzes | ▢ |
-| 15 | Performance Dashboard Screen | The screen showing student/teacher performance and progress | ▢ |
-| 16 | WhatsApp Notifications | Setting up booking and reminder alerts sent over WhatsApp | ▢ |
+| Date | Feature | What it means | Status |
+|------------|---------|----------------|--------|
+| Sep 30 (Wed) | Admin Screens | Everything an Admin sees: managing teachers, schedulers, enrollments | ▢ |
+| Oct 01 (Thu) | Scheduler Screens | Everything a Scheduler sees: assigning teachers, managing the calendar | ▢ |
+| Oct 02 (Fri) | Scheduler — Send Materials & Gifts | The screen where a Scheduler can send study materials and gifts to students | ▢ |
+| Oct 03 (Sat) | Teacher Screens | Everything a Teacher sees: profile, availability, upcoming classes | ▢ |
+| Oct 04 (Sun) | Student Screens | Everything a Student sees: profile, enrolled course, upcoming classes | ▢ |
+| Oct 05 (Mon) | Booking Calendar Screen | The screen to view and book available time slots | ▢ |
+| Oct 06 (Tue) | Lessons Screen | The screen where students view lesson content | ▢ |
+| Oct 07 (Wed) | Quiz Screen | The screen where students take quizzes | ▢ |
+| Oct 08 (Thu) | Performance Dashboard Screen | The screen showing student/teacher performance and progress | ▢ |
+| Oct 09 (Fri) | WhatsApp Notifications | Setting up booking and reminder alerts sent over WhatsApp | ▢ |
 
-## Week 3 (Day 17–25): Infrastructure & Deployment on AWS
+## Week 3 (Oct 10 – Oct 17): Infrastructure & Deployment on AWS
 
-| Day | Feature | What it means | Status |
-|-----|---------|----------------|--------|
-| 17 | Cloud Servers Setup | Setting up the servers on AWS that will run the app | ▢ |
-| 18 | Cloud Database Setup | Moving the data storage system onto AWS | ▢ |
-| 19 | File Storage Setup | Setting up where uploaded files (documents, images) are stored | ▢ |
-| 20 | Domain & DNS Setup | Connecting your website address to the live app | ▢ |
-| 21 | Security Setup | Setting up protections (SSL, secure connections, etc.) | ▢ |
-| 22 | Deployment Automation | Setting up the process that pushes updates live automatically | ▢ |
-| 23 | Monitoring & Backups | Setting up alerts for problems and automatic backups of data | ▢ |
-| 24 | Staging Trial Run | Running the app in a live-like environment to catch issues before going public | ▢ |
-| 25 | Infra Review & Fixes | Fixing anything found during the trial run | ▢ |
+| Date | Feature | What it means | Status |
+|------------|---------|----------------|--------|
+| Oct 10 (Sat) | Cloud Servers Setup (AWS) | Setting up the servers that will run the app | ▢ |
+| Oct 11 (Sun) | Managed Database Setup (Aurora Postgres) | Setting up a reliable, managed home for all the app's data | ▢ |
+| Oct 12 (Mon) | File Storage Setup (S3) | Setting up where uploaded files (documents, images) are stored | ▢ |
+| Oct 13 (Tue) | Background Task Handling (RabbitMQ) | Setting up a system that handles behind-the-scenes tasks (like sending a WhatsApp alert) reliably, without slowing the app down | ▢ |
+| Oct 14 (Wed) | Speed Layer (Redis) | Setting up a "fast memory" that speeds up the app by remembering frequently-used info | ▢ |
+| Oct 15 (Thu) | Domain, DNS & Security Setup | Connecting your website address to the live app and setting up secure connections | ▢ |
+| Oct 16 (Fri) | Deployment Automation (GitHub Actions) | Setting up the process that pushes updates live automatically whenever changes are made | ▢ |
+| Oct 17 (Sat) | Staging Trial Run & Fixes | Running the app in a live-like environment to catch and fix issues before going public | ▢ |
 
-## Week 4 (Day 26–30): Zoom, AI Features & Launch
+## Week 4 (Oct 18 – Oct 22): Zoom, AI Features & Launch
 
-| Day | Feature | What it means | Status |
-|-----|---------|----------------|--------|
-| 26 | Zoom Integration — Setup | Behind-the-scenes work to auto-generate a Zoom link for each booked class | ▢ |
-| 27 | Zoom Integration — Screen | The "Join via Zoom" button and class screen | ▢ |
-| 28 | AI Features — Setup & Screen | Behind-the-scenes and screen work for AI-powered features *(needs more detail from you on what this should do)* | ▢ |
-| 29 | Final Bug Fixing & Polish | Fixing issues and small improvements across the whole app | ▢ |
-| 30 | Launch | Making the app officially live and accessible to real users | ▢ |
+| Date | Feature | What it means | Status |
+|------------|---------|----------------|--------|
+| Oct 18 (Sun) | Zoom Integration — Setup | Behind-the-scenes work to auto-generate a Zoom link for each booked class | ▢ |
+| Oct 19 (Mon) | Zoom Integration — Screen | The "Join via Zoom" button and class screen | ▢ |
+| Oct 20 (Tue) | AI Features — Setup & Screen | Behind-the-scenes and screen work for AI-powered features *(needs more detail from you on what this should do)* | ▢ |
+| Oct 21 (Wed) | Final Bug Fixing & Polish | Fixing issues and small improvements across the whole app | ▢ |
+| Oct 22 (Thu) | Launch | Making the app officially live and accessible to real users | ▢ |
