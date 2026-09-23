@@ -1,57 +1,348 @@
-# 30-Day Build Plan — Finquo Web App
-One-to-One Teaching Platform
+# Product Requirements Document (PRD)
 
-# PRD - Product Requirements Document
+## Executive Summary
 
-## What is this?
-This is an app that connects students with teachers for one-to-one classes.
+**Product Name:** Finquo
 
-## Why are we building it?
-Right now, matching a student with the right teacher and managing their classes is manual and messy. This app makes it simple and organized.
+**Problem Statement:** There's no reliable single system that teaches kids 
 
-## Who uses it?
-- **Admin** — Adds teachers and assigns them to schedulers. Manages the whole platform.
-- **Scheduler** — Matches teachers with students. Books class timings. Sends materials and gifts to students.
-- **Teacher** — Sets their availability. Teaches classes. Shares lessons.
-- **Student** — Gets added to the platform after buying a course. Attends classes, does lessons, and takes quizzes.
-- **Enrollment Advisor** — Create accounts for students after course purchase
-- **QA Auditor** — Audit each sessions if necessary
-- **Finance** — Collect payments from students and pay teachers based on hourly rate
+- [Codebase](https://github.com/finquo/app)
 
-## How does a student join?
-A student buys a course first. After that, they are added to the platform — they don't sign up on their own.
 
-## What can the app do?
-- Let the right people log in safely, based on their role.
-- Let an Admin add teachers and assign them to a Scheduler.
-- Let a Scheduler book class slots between a teacher and a student.
-- Let a Scheduler send study materials and gifts to students.
-- Show teachers their calendar and let them set free time slots.
-- Run live classes through Zoom.
-- Let students view lessons inside the app.
-- Let students take quizzes inside the app.
-- Track how each student and teacher is performing.
-- Send booking and reminder alerts over WhatsApp.
-- Use AI to help with some parts of the experience (details to be finalized).
+**Proposed Solution:** A platform that schedules sessions and classes for students with already hired specialist and mentor through online.
 
-## What does success look like?
-- Students get matched and booked into classes without manual back-and-forth.
-- Teachers know their schedule and can teach without confusion.
-- The Admin can manage teachers and schedulers easily from one place.
-- Students can learn, take quizzes, and see their progress in one app.
+**Launch Target:** [21-10-2026]
 
-## What's not included right now?
-- Students browsing and picking their own teacher (Scheduler does this instead).
-- In-app live chat between students and teachers.
-- Payments inside the app (handled separately, before enrollment).
+## Goals & Success Criteria
 
-# 30-Day Build Plan — One-to-One Teaching Platform
+### Business Goals
+1. Make money
+2. Teach students
 
-**What changed in this version:**
-- Added a new screen for the Scheduler to send materials and gifts to students. This pushed the plan out by one day, so it now runs **31 days** (Sep 22 – Oct 22) instead of 30 — let me know if you'd rather cut a day elsewhere to keep it at 30.
-- Lessons and Quiz backend work are split into their own separate days.
-- Zoom (video calling) and AI-powered features are built in the **last week**, alongside final testing — assumed to mean AI is used for something like smart suggestions/automated help; let me know exactly what you want the AI to do and I'll make that day more specific.
-- The UI week has **one full day dedicated to each user role's screens** (Admin, Scheduler, Teacher, Student).
+### User Goals
+1. Parent will be happy that their children is learning latest and real world knowledge
+2. Students learns real world knowledge
+3. Platform make it easy for them to get connected to Teachers
+
+### Non-Goals (Out of Scope)
+- Fully automate scheduling
+- Multiple students in a meeting
+
+## User Personas & Use Cases
+
+### Primary Persona: [Student]
+- **Role:** Student
+- **Goals:** Learn
+- **Pain Points:** Hard to find courses or mentors
+- **Technical Proficiency:** Beginner
+- **Context:** Uses this platform after school, weekends, vacation days
+
+### Secondary Persona: [Teacher]
+- **Role:** Teacher (freelance employee)
+- **Goals:** Teach
+- **Pain Points:** Hard to students
+- **Technical Proficiency:** Medium
+- **Context:** Uses this platform every weekdays multiple times a day
+
+### Moderator Persona: [Scheduler]
+- **Role:** Scheduler (employee at Finquo)
+- **Goals:** Schedule sessions, manage students and teachers
+- **Pain Points:** A platform to do and view everything in one place
+- **Technical Proficiency:** High
+- **Context:** Uses this platform every days multiple times a day
+
+### Other Personas: [Admin]
+- **Role:** Owner of Finquo
+- **Goals:** Manage employees and hire more teachers
+- **Pain Points:** A platform to do and view everything in one place
+- **Technical Proficiency:** Medium
+- **Context:** Uses this platform once in a week
+- 
+### Other Personas: [Enrolement Adviced]
+- **Role:** Salesmen at Finquo
+- **Goals:** Collect leads and create accounts for students
+- **Pain Points:** A platform to add students faster
+- **Technical Proficiency:** Beginner
+- **Context:** Uses this platform every weekdays multiple times a day
+- 
+### Other Personas: [Finance]
+- **Role:** HR/Finance at Finquo
+- **Goals:** Monitor teacher and pay their salaries
+- **Pain Points:** A platform to monitor teacher's performances
+- **Technical Proficiency:** Medium
+- **Context:** Uses this platform every weekdays multiple times a day
+
+### Other Personas: [QA Auditor]
+- **Role:** HR/QA at Finquo
+- **Goals:** Monitor the systema and performance or teacher and resolve complaints
+- **Pain Points:** A platform to monitor teacher's performances and track issues
+- **Technical Proficiency:** Medium
+- **Context:** Uses this platform every weekdays multiple times a day
+
+![User Roles](./roles.png)
+
+### Key Use Cases
+
+#### Use Case 1: [Create account for students]
+**Actor:** [Enrolement Advicer]
+**Preconditions:** [Student's parent should purchase the program]
+**Flow:**
+1. Enrolement Advicer [Create student profile and account credentials]
+2. System [Checks student is unique and sends credentials via whatsapp or email]
+3. Student [Goes to the platform and login]
+4. System [Make sure student credentials are valid]
+
+**Expected Outcome:** Students will be able to see their profile and update credentials
+**Edge Cases:** Students don't know how to login
+
+#### Use Case 2: [Create Personalized Sessions]
+**Actor:** [Scheduler]
+**Preconditions:** [Valid Student Account]
+**Flow:**
+1. Scheduler [Create sessions data, lessons, and quiz]
+2. System [Creates unique sessions]
+3. Scheduler [Search and assign to students in a particular order]
+4. System [Checks students profile has enough program limit to accommodate these sessions]
+
+**Expected Outcome:** Students will be able to see, what session are available to them
+**Edge Cases:** Assigns more sessions to a student
+
+#### Use Case 3: [Admin hired a teacher]
+**Actor:** [Admin]
+**Preconditions:** [Valid admin privileges]
+**Flow:**
+1. Admin [Create teacher's profile and account credentials]
+2. System [Checks teacher is unique and sends credentials via whatsapp or email]
+3. Teacher [Goes to the platform and login]
+4. System [Make sure teacher's credentials are valid]
+3. Teacher [Update their availability]
+4. System [Mark teach as active]
+
+**Expected Outcome:** Teacher will be able to see their profiles and update
+**Edge Cases:** Teacher don't know how to login
+
+#### Use Case 4: [Assigns Sessions]
+**Actor:** [Scheduler]
+**Preconditions:** [Valid Student & Teacher Account]
+**Flow:**
+1. Scheduler [Pick a student and assigns teacher as default mentor]
+2. System [Make sure teacher is compatible with students preferred languages]
+3. Scheduler [Pick a student and assigns each sessions with default mentor or available mentor]
+4. System [Checks teacher availability or raise conflict info against already created sessions]
+
+**Expected Outcome:** Students will be able to see, which teachers are assigned for each session and their default mentor
+**Edge Cases:** Limited teachers or conflict of scheduled time. Mentor is no longer available for future sessions
+
+## Product Requirements
+
+### Functional Requirements
+
+#### Must Have (P0) - MVP
+1. **Role Managament**: Create, Update, Manage all type of users
+2. **Schedule Meeting**: Set a meeting for students and teachers
+3. **Sessions**: Ability to customize sessions and assigns to every student
+4. **Dynamic Zoom/Google Meet**: Scalable way to generate meeting links
+5. **Notification through Whatsapp**: Trigger notifications for each sessions before 10 mins
+6. **AI Video to Summary**: Preview session recording and extract summary for QA Auditor
+
+#### Should Have (P1) - Post-Launch
+1. **Observability**: Status, Health and Live Dashboard for admin
+2. **Scalable Infra**: CI/CD pipelines for developers
+3. **Accessibility**: for kids and parents
+
+#### Nice to Have (P2) - Future Consideration
+1. **Nice UI**: for mobile and desktop view
+2. **Localization**: for multiple countries and languages
+
+### Non-Functional Requirements
+
+#### Performance
+- [Load time requirements: e.g., "Page load < 2 seconds"]
+- [Response time: e.g., "API response < 500ms"]
+- [Concurrent users: e.g., "Support 10K concurrent users"]
+
+#### Security & Privacy
+- [Authentication requirements]
+- [Data encryption standards]
+- [Compliance requirements: GDPR, CCPA, etc.]
+- [User data handling policies]
+
+#### Scalability
+- [Expected growth: e.g., "Scale to 100K users in 6 months"]
+- [Infrastructure considerations]
+
+#### Accessibility
+- [WCAG compliance level: A, AA, or AAA]
+- [Keyboard navigation requirements]
+- [Screen reader support]
+
+#### Browser/Platform Support
+- [Supported browsers and versions]
+- [Mobile platform requirements: iOS, Android]
+- [Responsive design breakpoints]
+
+<!--
+## User Experience & Design
+
+### User Flow Diagram
+[Link to or embed user flow diagram - Figma, Miro, etc.]
+
+### Wireframes/Mockups
+[Link to design files or embed key screens]
+
+### Key Interactions
+1. **[Interaction Name]**
+   - **Trigger:** [What initiates this interaction]
+   - **Behavior:** [What happens]
+   - **Feedback:** [How system responds to user]
+
+### Design Principles for This Product
+- [Principle 1: e.g., "Minimize clicks to core action"]
+- [Principle 2: e.g., "Progressive disclosure of complexity"]
+- [Principle 3: e.g., "Clear error states and recovery paths"]
+-->
+
+## Technical Specifications
+
+### System Architecture
+[High-level architecture overview - link to detailed technical design doc if available]
+
+### Data Model
+
+
+### API Requirements
+
+#### Endpoints
+| Endpoint | Purpose |
+|----------|---------|
+| `/api/auth` | Auth |
+| `/api/*` | Logical APIs |
+
+### Third-Party Integrations
+- **Zoom SDK:** Need credentials after subscriptions
+- **OpenRouter AI SDK:** Need credentials after subscriptions
+- **Meta Whatsapp:** Need credentials
+- **AWS Admin Account:** Need a custom user with full access to AWS platform
+
+### Technical Constraints
+- AWS too complex for a simple project like this
+- Zoom and Google Meeting API limitations and live recording
+
+### Analytics & Tracking
+
+#### Events to Track
+| Event Name | Trigger | Properties | Purpose |
+|------------|---------|------------|---------|
+| `[event_name]` | [When it fires] | [Data captured] | [Why we track it] |
+| `[event_name]` | [When it fires] | [Data captured] | [Why we track it] |
+
+<!--
+## Go-to-Market Strategy
+
+### Launch Plan
+- **Beta/Alpha Testing:** [Timeline, participant criteria, feedback loop]
+- **Phased Rollout:** [If applicable - % of users per phase]
+- **Launch Date:** [Target date]
+- **Launch Channels:** [How we'll announce: email, blog, in-app, PR, etc.]
+
+### Marketing & Positioning
+- **Value Proposition:** [One sentence describing the value]
+- **Key Messages:** 
+  - [Message for user segment 1]
+  - [Message for user segment 2]
+- **Marketing Channels:** [Paid ads, content, partnerships, etc.]
+
+### Sales Enablement (if B2B)
+- **Sales Materials:** [Decks, one-pagers, demo scripts]
+- **Pricing/Packaging:** [How this fits into pricing tiers]
+- **Training Required:** [What sales team needs to know]
+
+### Support & Documentation
+- **User Documentation:** [Help articles, tutorials, videos]
+- **Support Team Training:** [Timeline, materials needed]
+- **FAQ:** [Common questions and answers]
+
+## Dependencies & Risks
+
+### Dependencies
+| Dependency | Owner | Status | Impact if Delayed | Mitigation |
+|------------|-------|--------|-------------------|------------|
+| [Dependency 1] | [Team/Person] | [On Track/At Risk/Blocked] | [Impact] | [Plan B] |
+| [Dependency 2] | [Team/Person] | [Status] | [Impact] | [Plan B] |
+
+### Risks & Mitigation
+
+#### High Risk
+1. **[Risk Description]**
+   - **Probability:** [High/Medium/Low]
+   - **Impact:** [High/Medium/Low]
+   - **Mitigation:** [How we'll address this]
+   - **Owner:** [Who's responsible]
+
+#### Medium Risk
+1. **[Risk Description]**
+   - [Same structure as above]
+-->
+
+### Open Questions
+- [ ] Is Zoom SDK better than Google Calender API?
+- [ ] Is there any SDKs using whatsapp APIs?
+- [ ] Which AI model can provider reliable summarizations?
+- [ ] Is AWS can make it easy for future development?
+
+## Timeline & Milestones
+
+### Development Phases
+
+| Phase | Timeline | Key Deliverables |
+|-------|:--------:|------------------|
+| **Discovery** | ✅ | User research, competitive analysis |
+| **Design** | ❌ | Wireframes, mockups, user testing |
+| **Development Sprint 1** | 🚧 | [Core features] |
+| **Development Sprint 2** | ▢ | [Additional features] |
+| **QA & Testing** | ▢ | Test plan execution, bug fixes |
+| **Beta Launch** | ▢ | Limited release, feedback collection |
+| **Full Launch** | ▢ | General availability |
+| **Post-Launch** | ▢ | Monitoring, iteration |
+
+### Key Milestones
+- **[Database Schema Design]:** 23-09-2026
+- **[Milestone 2]:** [Date]
+- **[Milestone 3]:** [Date]
+
+<!--
+## Resources & Team
+
+### Core Team
+- **Product Manager:** [Name]
+- **Engineering Lead:** [Name]
+- **Design Lead:** [Name]
+- **QA Lead:** [Name]
+- **Marketing Lead:** [Name]
+
+### Budget (if applicable)
+- **Development:**
+- **Design:**
+- **Marketing:**
+- **Third-party Services:** AWS, Zoom, Whatsapp, GitHub, 
+- **Total:**
+
+## Post-Launch Plan
+
+### Success Criteria Check-in Schedule
+- **Week 1:** [Metrics to review]
+- **Week 4:** [Metrics to review]
+- **Week 12:** [Metrics to review]
+
+### Iteration Plan
+- **Feedback Collection:** [Methods and frequency]
+- **Update Cadence:** [How often we'll ship improvements]
+- **Sunset Plan:** [If applicable - when and how we might deprecate]
+
+### Learning Goals
+- [What we want to learn from this launch]
+- [How we'll capture and share learnings]
+-->
 
 ### Status Legend
 
