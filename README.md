@@ -14,6 +14,9 @@ Right now, matching a student with the right teacher and managing their classes 
 - **Scheduler** — Matches teachers with students. Books class timings. Sends materials and gifts to students.
 - **Teacher** — Sets their availability. Teaches classes. Shares lessons.
 - **Student** — Gets added to the platform after buying a course. Attends classes, does lessons, and takes quizzes.
+- **Enrollment Advisor** — Create accounts for students after course purchase
+- **QA Auditor** — Audit each sessions if necessary
+- **Finance** — Collect payments from students and pay teachers based on hourly rate
 
 ## How does a student join?
 A student buys a course first. After that, they are added to the platform — they don't sign up on their own.
