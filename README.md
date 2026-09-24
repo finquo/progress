@@ -6,12 +6,11 @@
 
 **Problem Statement:** There's no reliable single system that teaches kids 
 
-- [Codebase](https://github.com/finquo/app)
-
-
 **Proposed Solution:** A platform that schedules sessions and classes for students with already hired specialist and mentor through online.
 
 **Launch Target:** [21-10-2026]
+
+- [Codebase](https://github.com/finquo/app)
 
 ## Goals & Success Criteria
 
@@ -133,6 +132,30 @@
 **Expected Outcome:** Students will be able to see, which teachers are assigned for each session and their default mentor
 **Edge Cases:** Limited teachers or conflict of scheduled time. Mentor is no longer available for future sessions
 
+#### Use Case 5: [Sends Materials]
+**Actor:** Scheduler
+**Preconditions:** Valid Student & Pending Worksheet
+**Flow:**
+1. Scheduler: Pick a student and mark which worksheets are pending to send
+2. System: Make sure student has valid home address
+3. Scheduler: Batch send the worksheets and mark it as sent
+
+**Expected Outcome:** Students will be able to see, which worksheets are on the way
+**Edge Cases:** Parents changed their home address and forgot to notify the scheduler
+
+#### Use Case 6: [Monitor Sessions]
+**Actor:** QA Auditor
+**Preconditions:** Completed or on going sessions
+**Flow:**
+1. QA Auditor: Pick an on going session and joins the meeting with them
+2. System: Make sure the sessions are still visible to join
+3. QA Auditor: Pick a student or session and check it recordings and AI generated summary
+4. System: Make sure videos are still available and ready to transcribe
+5. QA Auditor: Mark sessions or teachers or issues and resolved or raise concerns
+
+**Expected Outcome:** Students will be able to see, which worksheets are on the way
+**Edge Cases:** Parents changed their home address and forgot to notify the scheduler
+
 ## Product Requirements
 
 ### Functional Requirements
@@ -232,6 +255,7 @@
 #### Events to Track
 | Event Name | Trigger | Properties | Purpose |
 |------------|---------|------------|---------|
+| `Systen Error` | When it not responding | Check Regularly | For UX |
 | `API Error` | When it fires | Data captured | For DX |
 | `Zoom/Google Meet Error` | When it fires | Captured & Alert | For UX |
 
@@ -305,7 +329,8 @@
 | **Post-Launch** | ▢ | Monitoring, iteration |
 
 ### Key Milestones
-- **[Database Schema Design]:** 23-09-2026
+- **Basic Repository with Tech Stack:** 22-09-2026
+- **Database Schema Design:** 23-09-2026
 
 <!--
 ## Resources & Team
@@ -341,23 +366,23 @@
 - [How we'll capture and share learnings]
 -->
 
-## TimeLine
+## Timeline
 
 ### Status Legend
 
 | Symbol | Meaning |
 |--------|---------|
-| ✅ | Done — finished and working |
-| 🚧 | In Progress — being worked on right now |
-| ▢ | Not Started — hasn't been picked up yet |
-| ❌ | Blocked / Issue — stuck or something's wrong, needs attention |
+| ✅ | Done - finished and working |
+| 🚧 | In Progress - being worked on right now |
+| ▢ | Not Started - hasn't been picked up yet |
+| ❌ | Blocked / Issue - stuck or something's wrong, needs attention |
 
 ## Week 1 (Sep 22 – Sep 29): Database & API Writing
 
 | Date | Feature | What it means | Status |
 |------------|---------|----------------|--------|
-| Sep 22 (Tue) | Login & Signup logic | Admins, teachers, schedulers, and students can log in safely (with different access levels) | ✅ |
-| Sep 23 (Wed) | Secure Data Storage | Setting up the system that safely stores all user info | 🚧 |
+| Sep 22 (Tue) | Basic Repo and Auth | Picked suitable tech stack and basic auth | ✅ |
+| Sep 23 (Wed) | Secure Data Schema | Wrote schema for storing all user info | 🚧 |
 | Sep 24 (Thu) | Connecting the Pieces + Roles & Permissions | Linking storage to the app; setting up who can do what (Admin/Scheduler/Teacher/Student) | ▢ |
 | Sep 25 (Fri) | Student Enrollment + Teacher Profile | Behind-the-scenes work to add a student after purchase, and to set up teacher profiles | ▢ |
 | Sep 26 (Sat) | Teacher–Scheduler Assignment + Teacher Availability | Behind-the-scenes work for admins to assign teachers to schedulers, and for teachers to set their free time slots | ▢ |
@@ -365,13 +390,13 @@
 | Sep 28 (Mon) | Lessons + Performance Tracking | Behind-the-scenes work for lesson content and tracking how students/teachers are doing | ▢ |
 | Sep 29 (Tue) | Quiz System | Behind-the-scenes work for creating and grading quizzes | ▢ |
 
-## Week 2 (Sep 30 – Oct 09): UI Screens — One Day Per Role
+## Week 2 (Sep 30 – Oct 09): UI Screens - One Day Per Role
 
 | Date | Feature | What it means | Status |
 |------------|---------|----------------|--------|
 | Sep 30 (Wed) | Admin Screens | Everything an Admin sees: managing teachers, schedulers, enrollments | ▢ |
 | Oct 01 (Thu) | Scheduler Screens | Everything a Scheduler sees: assigning teachers, managing the calendar | ▢ |
-| Oct 02 (Fri) | Scheduler — Send Materials & Gifts | The screen where a Scheduler can send study materials and gifts to students | ▢ |
+| Oct 02 (Fri) | Scheduler - Send Materials & Gifts | The screen where a Scheduler can send study materials and gifts to students | ▢ |
 | Oct 03 (Sat) | Teacher Screens | Everything a Teacher sees: profile, availability, upcoming classes | ▢ |
 | Oct 04 (Sun) | Student Screens | Everything a Student sees: profile, enrolled course, upcoming classes | ▢ |
 | Oct 05 (Mon) | Booking Calendar Screen | The screen to view and book available time slots | ▢ |
@@ -397,8 +422,8 @@
 
 | Date | Feature | What it means | Status |
 |------------|---------|----------------|--------|
-| Oct 18 (Sun) | Zoom Integration — Setup | Behind-the-scenes work to auto-generate a Zoom link for each booked class | ▢ |
-| Oct 19 (Mon) | Zoom Integration — Screen | The "Join via Zoom" button and class screen | ▢ |
-| Oct 20 (Tue) | AI Features — Setup & Screen | Behind-the-scenes and screen work for AI-powered features *(needs more detail from you on what this should do)* | ▢ |
+| Oct 18 (Sun) | Zoom Integration - Setup | Behind-the-scenes work to auto-generate a Zoom link for each booked class | ▢ |
+| Oct 19 (Mon) | Zoom Integration - Screen | The "Join via Zoom" button and class screen | ▢ |
+| Oct 20 (Tue) | AI Features - Setup & Screen | Behind-the-scenes and screen work for AI-powered features *(needs more detail from you on what this should do)* | ▢ |
 | Oct 21 (Wed) | Final Bug Fixing & Polish | Fixing issues and small improvements across the whole app | ▢ |
 | Oct 22 (Thu) | Launch | Making the app officially live and accessible to real users | ▢ |
