@@ -84,51 +84,51 @@
 ### Key Use Cases
 
 #### Use Case 1: [Create account for students]
-**Actor:** [Enrolement Advicer]
-**Preconditions:** [Student's parent should purchase the program]
+**Actor:** Enrolement Advicer
+**Preconditions:** Student's parent should purchase the program
 **Flow:**
-1. Enrolement Advicer [Create student profile and account credentials]
-2. System [Checks student is unique and sends credentials via whatsapp or email]
-3. Student [Goes to the platform and login]
-4. System [Make sure student credentials are valid]
+1. Enrolement Advicer: Create student profile and account credentials
+2. System: Checks student is unique and sends credentials via whatsapp or email
+3. Student: Goes to the platform and login
+4. System: Make sure student credentials are valid
 
 **Expected Outcome:** Students will be able to see their profile and update credentials
 **Edge Cases:** Students don't know how to login
 
 #### Use Case 2: [Create Personalized Sessions]
-**Actor:** [Scheduler]
-**Preconditions:** [Valid Student Account]
+**Actor:** Scheduler
+**Preconditions:** Valid Student Account
 **Flow:**
-1. Scheduler [Create sessions data, lessons, and quiz]
-2. System [Creates unique sessions]
-3. Scheduler [Search and assign to students in a particular order]
-4. System [Checks students profile has enough program limit to accommodate these sessions]
+1. Scheduler: Create sessions data, lessons, and quiz
+2. System: Creates unique sessions
+3. Scheduler: Search and assign to students in a particular order
+4. System: Checks students profile has enough program limit to accommodate these sessions
 
 **Expected Outcome:** Students will be able to see, what session are available to them
 **Edge Cases:** Assigns more sessions to a student
 
 #### Use Case 3: [Admin hired a teacher]
-**Actor:** [Admin]
-**Preconditions:** [Valid admin privileges]
+**Actor:** Admin
+**Preconditions:** Valid admin privileges
 **Flow:**
-1. Admin [Create teacher's profile and account credentials]
-2. System [Checks teacher is unique and sends credentials via whatsapp or email]
-3. Teacher [Goes to the platform and login]
-4. System [Make sure teacher's credentials are valid]
-3. Teacher [Update their availability]
-4. System [Mark teach as active]
+1. Admin: Create teacher's profile and account credentials
+2. System: Checks teacher is unique and sends credentials via whatsapp or email
+3. Teacher: Goes to the platform and login
+4. System: Make sure teacher's credentials are valid
+3. Teacher: Update their availability
+4. System: Mark teach as active
 
 **Expected Outcome:** Teacher will be able to see their profiles and update
 **Edge Cases:** Teacher don't know how to login
 
 #### Use Case 4: [Assigns Sessions]
-**Actor:** [Scheduler]
-**Preconditions:** [Valid Student & Teacher Account]
+**Actor:** Scheduler
+**Preconditions:** Valid Student & Teacher Account
 **Flow:**
-1. Scheduler [Pick a student and assigns teacher as default mentor]
-2. System [Make sure teacher is compatible with students preferred languages]
-3. Scheduler [Pick a student and assigns each sessions with default mentor or available mentor]
-4. System [Checks teacher availability or raise conflict info against already created sessions]
+1. Scheduler: Pick a student and assigns teacher as default mentor
+2. System: Make sure teacher is compatible with students preferred languages
+3. Scheduler: Pick a student and assigns each sessions with default mentor or available mentor
+4. System: Checks teacher availability or raise conflict info against already created sessions
 
 **Expected Outcome:** Students will be able to see, which teachers are assigned for each session and their default mentor
 **Edge Cases:** Limited teachers or conflict of scheduled time. Mentor is no longer available for future sessions
@@ -157,29 +157,29 @@
 ### Non-Functional Requirements
 
 #### Performance
-- [Load time requirements: e.g., "Page load < 2 seconds"]
-- [Response time: e.g., "API response < 500ms"]
-- [Concurrent users: e.g., "Support 10K concurrent users"]
+- Load time requirements: e.g., "Page load < 2 seconds"
+- Response time: e.g., "API response < 500ms"
+- Concurrent users: Support 1K
 
 #### Security & Privacy
-- [Authentication requirements]
-- [Data encryption standards]
-- [Compliance requirements: GDPR, CCPA, etc.]
-- [User data handling policies]
+- Authentication requirements
+- Data encryption standards
+- Compliance requirements: GDPR, CCPA, etc.
+- User data handling policies
 
 #### Scalability
-- [Expected growth: e.g., "Scale to 100K users in 6 months"]
-- [Infrastructure considerations]
+- Expected growth: Scale to 10K users in 1 year
+- Infrastructure considerations
 
 #### Accessibility
-- [WCAG compliance level: A, AA, or AAA]
-- [Keyboard navigation requirements]
-- [Screen reader support]
+- WCAG compliance level: A, AA, or AAA
+- Keyboard navigation requirements
+- Screen reader support
 
 #### Browser/Platform Support
-- [Supported browsers and versions]
-- [Mobile platform requirements: iOS, Android]
-- [Responsive design breakpoints]
+- Supported browsers and versions
+- Mobile platform requirements: iOS, Android
+- Responsive design breakpoints
 
 <!--
 ## User Experience & Design
@@ -209,7 +209,6 @@
 
 ### Data Model
 
-
 ### API Requirements
 
 #### Endpoints
@@ -233,8 +232,8 @@
 #### Events to Track
 | Event Name | Trigger | Properties | Purpose |
 |------------|---------|------------|---------|
-| `[event_name]` | [When it fires] | [Data captured] | [Why we track it] |
-| `[event_name]` | [When it fires] | [Data captured] | [Why we track it] |
+| `API Error` | When it fires | Data captured | For DX |
+| `Zoom/Google Meet Error` | When it fires | Captured & Alert | For UX |
 
 <!--
 ## Go-to-Market Strategy
@@ -299,16 +298,14 @@
 | **Discovery** | ✅ | User research, competitive analysis |
 | **Design** | ❌ | Wireframes, mockups, user testing |
 | **Development Sprint 1** | 🚧 | [Core features] |
-| **Development Sprint 2** | ▢ | [Additional features] |
 | **QA & Testing** | ▢ | Test plan execution, bug fixes |
 | **Beta Launch** | ▢ | Limited release, feedback collection |
+| **Development Sprint 2** | ▢ | [Additional features] |
 | **Full Launch** | ▢ | General availability |
 | **Post-Launch** | ▢ | Monitoring, iteration |
 
 ### Key Milestones
 - **[Database Schema Design]:** 23-09-2026
-- **[Milestone 2]:** [Date]
-- **[Milestone 3]:** [Date]
 
 <!--
 ## Resources & Team
@@ -343,6 +340,8 @@
 - [What we want to learn from this launch]
 - [How we'll capture and share learnings]
 -->
+
+## TimeLine
 
 ### Status Legend
 
