@@ -382,10 +382,10 @@
 | Date | Feature | What it means | Status |
 |------------|---------|----------------|--------|
 | Sep 22 (Tue) | Basic Repo and Auth | Picked suitable tech stack and basic auth | ✅ |
-| Sep 23 (Wed) | Secure Data Schema | Wrote schema for storing all user info | 🚧 |
-| Sep 24 (Thu) | Connecting the Pieces + Roles & Permissions | Linking storage to the app; setting up who can do what (Admin/Scheduler/Teacher/Student) | ▢ |
-| Sep 25 (Fri) | Student Enrollment + Teacher Profile | Behind-the-scenes work to add a student after purchase, and to set up teacher profiles | ▢ |
-| Sep 26 (Sat) | Teacher–Scheduler Assignment + Teacher Availability | Behind-the-scenes work for admins to assign teachers to schedulers, and for teachers to set their free time slots | ▢ |
+| Sep 23 (Wed) | Secure Data Schema | Wrote schema for storing all user info | ✅ |
+| Sep 24 (Thu) | Connecting the Pieces + Roles & Permissions | Linking storage to the app; setting up who can do what (Admin/Scheduler/Teacher/Student) | ✅ |
+| Sep 25 (Fri) | Student Enrollment + Teacher Profile | Behind-the-scenes work to add a student after purchase, and to set up teacher profiles | 🚧 |
+| Sep 26 (Sat) | Teacher–Scheduler Assignment + Teacher Availability | Behind-the-scenes work for admins to assign teachers to schedulers, and for teachers to set their free time slots | 🚧 |
 | Sep 27 (Sun) | Booking Calendar | Behind-the-scenes work for schedulers to book time slots between teachers and students | ▢ |
 | Sep 28 (Mon) | Lessons + Performance Tracking | Behind-the-scenes work for lesson content and tracking how students/teachers are doing | ▢ |
 | Sep 29 (Tue) | Quiz System | Behind-the-scenes work for creating and grading quizzes | ▢ |
