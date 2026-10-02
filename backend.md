@@ -63,7 +63,7 @@ Simple guide to the Finquo backend service.
 - `teacher.getSlots` - Returns all teaching slots assigned to this teacher
 
 ### Student Router (`student`)
-- `student.get` - Returns the student profile for the logged-in user
+- [`student.get`](../backend/src/index.ts) - Returns the student profile for the logged-in user
 - `student.getMentor` - Returns the assigned mentor (teacher)
 - `student.getSupervisor` - Returns the assigned supervisor (scheduler)
 - `student.getSlots` - Returns all scheduled class slots for this student
@@ -75,8 +75,8 @@ Simple guide to the Finquo backend service.
 
 ## Configuration & Business Rules
 - **Plans (`plans.ts`)**:
-  - `finquo-30`: 30 classes (INR 1,000 / USD 10)
-  - `finquo-60`: 60 classes (INR 2,000 / USD 20)
+  - `finquo-30`: 30 classes (Demo Plans)
+  - `finquo-60`: 60 classes (Demo Plans)
 - **Quiz System (`quiz.ts`)**:
   - Question types: `choices` (multi-select), `options` (single-select), `text` (free-form)
 - **Data Types (`type.d.ts`)**:

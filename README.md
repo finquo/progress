@@ -384,18 +384,18 @@
 | Sep 22 (Tue) | Basic Repo and Auth | Picked suitable tech stack and basic auth | ✅ |
 | Sep 23 (Wed) | Secure Data Schema | Wrote schema for storing all user info | ✅ |
 | Sep 24 (Thu) | Connecting the Pieces + Roles & Permissions | Linking storage to the app; setting up who can do what (Admin/Scheduler/Teacher/Student) | ✅ |
-| Sep 25 (Fri) | Student Enrollment + Teacher Profile | Behind-the-scenes work to add a student after purchase, and to set up teacher profiles | 🚧 |
-| Sep 26 (Sat) | Teacher–Scheduler Assignment + Teacher Availability | Behind-the-scenes work for admins to assign teachers to schedulers, and for teachers to set their free time slots | 🚧 |
-| Sep 27 (Sun) | Booking Calendar | Behind-the-scenes work for schedulers to book time slots between teachers and students | ▢ |
-| Sep 28 (Mon) | Lessons + Performance Tracking | Behind-the-scenes work for lesson content and tracking how students/teachers are doing | ▢ |
+| Sep 25 (Fri) | Student Enrollment + Teacher Profile | Behind-the-scenes work to add a student after purchase, and to set up teacher profiles | ✅ |
+| Sep 26 (Sat) | Teacher–Scheduler Assignment + Teacher Availability | Behind-the-scenes work for admins to assign teachers to schedulers, and for teachers to set their free time slots | ✅ |
+| Sep 27 (Sun) | Booking Calendar | Behind-the-scenes work for schedulers to book time slots between teachers and students | ✅ |
+| Sep 28 (Mon) | Lessons | Behind-the-scenes work for lesson content | ✅ |
 | Sep 29 (Tue) | Quiz System | Behind-the-scenes work for creating and grading quizzes | ▢ |
 
 ## Week 2 (Sep 30 – Oct 09): UI Screens - One Day Per Role
 
 | Date | Feature | What it means | Status |
 |------------|---------|----------------|--------|
-| Sep 30 (Wed) | Admin Screens | Everything an Admin sees: managing teachers, schedulers, enrollments | ▢ |
-| Oct 01 (Thu) | Scheduler Screens | Everything a Scheduler sees: assigning teachers, managing the calendar | ▢ |
+| Sep 30 (Wed) | Admin Screens | Everything an Admin sees: managing teachers, schedulers, enrollments | 🚧 |
+| Oct 01 (Thu) | Scheduler Screens | Everything a Scheduler sees: assigning teachers, managing the calendar | 🚧 |
 | Oct 02 (Fri) | Scheduler - Send Materials & Gifts | The screen where a Scheduler can send study materials and gifts to students | ▢ |
 | Oct 03 (Sat) | Teacher Screens | Everything a Teacher sees: profile, availability, upcoming classes | ▢ |
 | Oct 04 (Sun) | Student Screens | Everything a Student sees: profile, enrolled course, upcoming classes | ▢ |
@@ -409,13 +409,13 @@
 
 | Date | Feature | What it means | Status |
 |------------|---------|----------------|--------|
-| Oct 10 (Sat) | Cloud Servers Setup (AWS) | Setting up the servers that will run the app | ▢ |
+| Oct 10 (Sat) | Cloud Servers Setup (AWS) | Setting up the servers that will run the app | 🚧 |
 | Oct 11 (Sun) | Managed Database Setup (Aurora Postgres) | Setting up a reliable, managed home for all the app's data | ▢ |
 | Oct 12 (Mon) | File Storage Setup (S3) | Setting up where uploaded files (documents, images) are stored | ▢ |
 | Oct 13 (Tue) | Background Task Handling (RabbitMQ) | Setting up a system that handles behind-the-scenes tasks (like sending a WhatsApp alert) reliably, without slowing the app down | ▢ |
 | Oct 14 (Wed) | Speed Layer (Redis) | Setting up a "fast memory" that speeds up the app by remembering frequently-used info | ▢ |
 | Oct 15 (Thu) | Domain, DNS & Security Setup | Connecting your website address to the live app and setting up secure connections | ▢ |
-| Oct 16 (Fri) | Deployment Automation (GitHub Actions) | Setting up the process that pushes updates live automatically whenever changes are made | ▢ |
+| Oct 16 (Fri) | Deployment Automation (GitHub Actions) | Setting up the process that pushes updates live automatically whenever changes are made | 🚧 |
 | Oct 17 (Sat) | Staging Trial Run & Fixes | Running the app in a live-like environment to catch and fix issues before going public | ▢ |
 
 ## Week 4 (Oct 18 – Oct 22): Zoom, AI Features & Launch
