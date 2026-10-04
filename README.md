@@ -394,13 +394,13 @@
 
 | Date | Feature | What it means | Status |
 |------------|---------|----------------|--------|
-| Sep 30 (Wed) | Admin Screens | Everything an Admin sees: managing teachers, schedulers, enrollments | 🚧 |
+| Sep 30 (Wed) | Admin Screens | Everything an Admin sees: managing teachers, schedulers, enrollments | ✅ |
 | Oct 01 (Thu) | Scheduler Screens | Everything a Scheduler sees: assigning teachers, managing the calendar | 🚧 |
-| Oct 02 (Fri) | Scheduler - Send Materials & Gifts | The screen where a Scheduler can send study materials and gifts to students | ▢ |
+| Oct 02 (Fri) | Booking Calendar Screen | The screen to view and book available time slots | 🚧 |
 | Oct 03 (Sat) | Teacher Screens | Everything a Teacher sees: profile, availability, upcoming classes | ▢ |
-| Oct 04 (Sun) | Student Screens | Everything a Student sees: profile, enrolled course, upcoming classes | ▢ |
-| Oct 05 (Mon) | Booking Calendar Screen | The screen to view and book available time slots | ▢ |
-| Oct 06 (Tue) | Lessons Screen | The screen where students view lesson content | ▢ |
+| Oct 04 (Sun) | Lessons Screen | The screen where students view lesson content | ▢ |
+| Oct 05 (Mon) | Student Screens | Everything a Student sees: profile, enrolled course, upcoming classes | ▢ |
+| Oct 06 (Tue) |  | ▢ |
 | Oct 07 (Wed) | Quiz Screen | The screen where students take quizzes | ▢ |
 | Oct 08 (Thu) | Performance Dashboard Screen | The screen showing student/teacher performance and progress | ▢ |
 | Oct 09 (Fri) | WhatsApp Notifications | Setting up booking and reminder alerts sent over WhatsApp | ▢ |
@@ -415,7 +415,7 @@
 | Oct 13 (Tue) | Background Task Handling (RabbitMQ) | Setting up a system that handles behind-the-scenes tasks (like sending a WhatsApp alert) reliably, without slowing the app down | ▢ |
 | Oct 14 (Wed) | Speed Layer (Redis) | Setting up a "fast memory" that speeds up the app by remembering frequently-used info | ▢ |
 | Oct 15 (Thu) | Domain, DNS & Security Setup | Connecting your website address to the live app and setting up secure connections | ▢ |
-| Oct 16 (Fri) | Deployment Automation (GitHub Actions) | Setting up the process that pushes updates live automatically whenever changes are made | 🚧 |
+| Oct 16 (Fri) | Deployment Automation (GitHub Actions) | Setting up the process that pushes updates live automatically whenever changes are made | ✅ |
 | Oct 17 (Sat) | Staging Trial Run & Fixes | Running the app in a live-like environment to catch and fix issues before going public | ▢ |
 
 ## Week 4 (Oct 18 – Oct 22): Zoom, AI Features & Launch
