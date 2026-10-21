@@ -12,7 +12,7 @@
 8. Create new S3 bucket for saving opentofu state
 
 ```bash
-aws s3api create-bucket --bucket finquo-app-opentofu-state --region ap-south-1 --create-bucket-configuration LocationConstraint=ap-south-1
+aws s3api create-bucket --bucket finquo-app-opentofu --region ap-south-1 --create-bucket-configuration LocationConstraint=ap-south-1
 ```
 
 ### Deploy for the First Time
