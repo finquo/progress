@@ -14,8 +14,8 @@ parents pay offline. Test every item below with all roles that can see the page.
 
 ## 1. Create user / update roles
 
-- [ ] Admin: [create users](https://test.finquo.ai/admin/users/new) with each role.
-- [ ] [Users table](https://test.finquo.ai/admin/users): edit a user's role (row menu
+- [ ] Admin: [create users](https://test.finquo.ai/users/new) with each role.
+- [ ] [Users table](https://test.finquo.ai/users): edit a user's role (row menu
       → Edit Role) → list + badges update.
 - [ ] Impersonate a user from the row menu → act as them → stop impersonating.
 - [ ] Revoke Sessions and Delete User actually work (not just a toast).

@@ -388,7 +388,7 @@
 | Sep 26 (Sat) | Teacher–Scheduler Assignment + Teacher Availability | Behind-the-scenes work for admins to assign teachers to schedulers, and for teachers to set their free time slots | ✅ |
 | Sep 27 (Sun) | Booking Calendar | Behind-the-scenes work for schedulers to book time slots between teachers and students | ✅ |
 | Sep 28 (Mon) | Lessons | Behind-the-scenes work for lesson content | ✅ |
-| Sep 29 (Tue) | Quiz System | Behind-the-scenes work for creating and grading quizzes | ▢ |
+| Sep 29 (Tue) | Quiz System | Behind-the-scenes work for creating and grading quizzes | ✅ |
 
 ## Week 2 (Sep 30 – Oct 09): UI Screens - One Day Per Role
 
@@ -398,19 +398,19 @@
 | Oct 01 (Thu) | Scheduler Screens | Everything a Scheduler sees: assigning teachers, managing the calendar | ✅ |
 | Oct 02 (Fri) | Booking Calendar Screen | The screen to view and book available time slots | ✅ |
 | Oct 03 (Sat) | Teacher Screens | Everything a Teacher sees: profile, availability, upcoming classes | ✅ |
-| Oct 04 (Sun) | Lessons Screen | The screen where students view lesson content | 🚧 |
-| Oct 05 (Mon) | Student Screens | Everything a Student sees: profile, enrolled course, upcoming classes | 🚧 |
+| Oct 04 (Sun) | Lessons Screen | The screen where students view lesson content | ✅ |
+| Oct 05 (Mon) | Student Screens | Everything a Student sees: profile, enrolled course, upcoming classes | ✅ |
 | Oct 06 (Tue) | More Screens and Dashboards | ✅ |
-| Oct 07 (Wed) | Quiz Screen | The screen where students take quizzes | ▢ |
+| Oct 07 (Wed) | Quiz Screen | The screen where students take quizzes | ✅ |
 | Oct 08 (Thu) | Performance Dashboard Screen | The screen showing student/teacher performance and progress | ▢ |
-| Oct 09 (Fri) | WhatsApp Notifications | Setting up booking and reminder alerts sent over WhatsApp | ▢ |
+| Oct 09 (Fri) | WhatsApp Notifications | Setting up booking and reminder alerts sent over WhatsApp | ✅ |
 
 ## Week 3 (Oct 10 – Oct 17): Infrastructure & Deployment on AWS
 
 | Date | Feature | What it means | Status |
 |------------|---------|----------------|--------|
-| Oct 10 (Sat) | Cloud Servers Setup (AWS) | Setting up the servers that will run the app | 🚧 |
-| Oct 11 (Sun) | Managed Database Setup (Aurora Postgres) | Setting up a reliable, managed home for all the app's data | 🚧 |
+| Oct 10 (Sat) | Cloud Servers Setup (AWS) | Setting up the servers that will run the app | ✅ |
+| Oct 11 (Sun) | Managed Database Setup (Aurora Postgres) | Setting up a reliable, managed home for all the app's data | ✅ |
 | Oct 12 (Mon) | File Storage Setup (S3) | Setting up where uploaded files (documents, images) are stored | ✅ |
 | Oct 13 (Tue) | Background Task Handling (RabbitMQ) | Setting up a system that handles behind-the-scenes tasks (like sending a WhatsApp alert) reliably, without slowing the app down | ▢ |
 | Oct 14 (Wed) | Speed Layer (Redis) | Setting up a "fast memory" that speeds up the app by remembering frequently-used info | ▢ |
@@ -424,6 +424,6 @@
 |------------|---------|----------------|--------|
 | Oct 18 (Sun) | Zoom Integration - Setup | Behind-the-scenes work to auto-generate a Zoom link for each booked class | ✅ |
 | Oct 19 (Mon) | Zoom Integration - Screen | The "Join via Zoom" button and class screen | ✅ |
-| Oct 20 (Tue) | AI Features - Setup & Screen | Behind-the-scenes and screen work for AI-powered features *(needs more detail from you on what this should do)* | ▢ |
-| Oct 21 (Wed) | Final Bug Fixing & Polish | Fixing issues and small improvements across the whole app | ▢ |
+| Oct 20 (Tue) | AI Features - Setup & Screen | Media convertion and summary using AI | ✅ |
+| Oct 21 (Wed) | Final Bug Fixing & Polish | Fixing issues and small improvements across the whole app | ✅ |
 | Oct 22 (Thu) | Launch | Making the app officially live and accessible to real users | ▢ |
