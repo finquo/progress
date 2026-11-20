@@ -412,9 +412,9 @@
 | Oct 10 (Sat) | Cloud Servers Setup (AWS) | Setting up the servers that will run the app | ✅ |
 | Oct 11 (Sun) | Managed Database Setup (Aurora Postgres) | Setting up a reliable, managed home for all the app's data | ✅ |
 | Oct 12 (Mon) | File Storage Setup (S3) | Setting up where uploaded files (documents, images) are stored | ✅ |
-| Oct 13 (Tue) | Background Task Handling (RabbitMQ) | Setting up a system that handles behind-the-scenes tasks (like sending a WhatsApp alert) reliably, without slowing the app down | ▢ |
+| Oct 13 (Tue) | Background Task Handling (Event Bridge) | Setting up a system that handles behind-the-scenes tasks (like sending a WhatsApp alert) reliably, without slowing the app down | ✅ |
 | Oct 14 (Wed) | Speed Layer (Redis) | Setting up a "fast memory" that speeds up the app by remembering frequently-used info | ▢ |
-| Oct 15 (Thu) | Domain, DNS & Security Setup | Connecting your website address to the live app and setting up secure connections | ▢ |
+| Oct 15 (Thu) | Domain, DNS & Security Setup | Connecting your website address to the live app and setting up secure connections | ✅ |
 | Oct 16 (Fri) | Deployment Automation (GitHub Actions) | Setting up the process that pushes updates live automatically whenever changes are made | ✅ |
 | Oct 17 (Sat) | Staging Trial Run & Fixes | Running the app in a live-like environment to catch and fix issues before going public | ✅ |
 
